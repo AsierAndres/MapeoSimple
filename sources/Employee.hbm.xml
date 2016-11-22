@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.sistema.hibernate.examen.models">
+
+	<class name="Employee" table="EMPLOYEE">
+		<id name="id" column="ID">
+			<generator class="identity" />
+		</id>
+		<property name="name" column="NAME" />
+		<property name="email" column="EMAIL" />
+		<property name="salary" column="SALARY" />
+	</class>
+
+</hibernate-mapping> 
